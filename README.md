@@ -1,4 +1,4 @@
-# Cafcass Application
+# KidsConnect Application
 
 This project is a React + TypeScript + Vite setup that integrates Electron for desktop applications. It features HMR (Hot Module Replacement) for development and various utilities for building and linting the application.
 
