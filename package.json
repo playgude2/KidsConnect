@@ -1,5 +1,5 @@
 {
-  "name": "cafcass",
+  "name": "KidsConnect",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -52,8 +52,8 @@
     "wait-on": "^7.2.0"
   },
   "build": {
-    "appId": "com.example.cafcass",
-    "productName": "Cafcass",
+    "appId": "com.example.KidsConnect",
+    "productName": "KidsConnect",
     "directories": {
       "output": "build"
     },

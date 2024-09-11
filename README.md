@@ -19,7 +19,7 @@ To get started with this project, follow these steps:
 
    ```bash
    git clone https://github.com/playgude2/KidsConnect
-   cd cafcass
+   cd KidsConnect
    ```
 
 2. **Install dependencies:**
@@ -79,7 +79,7 @@ Remove any ES module imports for `pdfMake` and `pdfFonts` before building the ap
 The project structure is organized as follows:
 
 ```bash
-cafcass-dissertation-project/
+KidsConnect/
 ├── 📁public
 │   └── vite.svg
 ├── 📁src
