@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "Raleway Regular";
+    src: url("../../assets/LondrinaSolidRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Raleway Regular2";
+    src: url("../../assets/RalewayRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .card {
+    background-color: #5cb9da;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+    z-index: 0;
+  }
+  .aboutImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 0.01%;
+    z-index: 5;
+    background-color: grey;
+  }
+   
+  .stickyTop {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+   
+  .aboutImg label {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-family: "Raleway Regular", sans-serif;
+    font-size: 40px;
+    transform: translate(-50%, -30%);
+    color: white;
+  }
+   
+  .mainMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+  }
+  .mainParagraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Raleway Regular2", sans-serif;
+    position: absolute;
+    top: 25%;
+    font-size: 28px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  .simpleWrite {
+    position: absolute;
+    left: 20%;
+    top: 75%;
+    height: 80px;
+    width: 200px;
+    border-radius: 20px;
+    z-index: 100;
+    background-color: #a3c644;
+    color: white;
+    font-family: "Raleway Regular", sans-serif;
+    font-size: 1.7rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+   
+  .simpleWrite:hover {
+    background-color: #8ab239;
+  }
+  .writeWithHelp {
+    position: absolute;
+    left: 60%;
+    top: 75%;
+    height: 80px;
+    width: 200px;
+    border-radius: 20px;
+    z-index: 100;
+    background-color: #a3c644;
+    color: white;
+    font-family: "Raleway Regular", sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+   
+  .writeWithHelp:hover {
+    background-color: #8ab239;
+  }
+  .notNow {
+    position: absolute;
+    left: 40%;
+    top: 105%;
+    height: 80px;
+    width: 200px;
+    border-radius: 20px;
+    z-index: 100;
+    background-color: #b04da3;
+    color: white;
+    font-family: "Raleway Regular", sans-serif;
+    font-size: 1.7rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+   
+  .notNow:hover {
+    background-color: #8a3d83;
+  }
+   
+  .imageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    left: -38%;
+    transform: translateY(-52%);
+    top: 50%;
+  }
+   
+  .bodyImage {
+    width: 50%;
+    position: absolute;
+    transform: translateY(5%);
+    z-index: 20;
+  }
+   
+  .headImage {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 49.7%;
+    top: 35px;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+   
+  .legImage {
+    width: 50%;
+    height: auto;
+    position: relative;
+    margin-left: 10px;
+    transform: translateY(-5%);
+    z-index: 5;
+  }
+  .judgeImg {
+    position: absolute;
+    left: 77%;
+    top: 20%;
+  }
+   
+  .closeIcon {
+    position: absolute;
+    top: 32%;
+    left: 72%;
+    z-index: 1100;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .subParagraph {
+    display: block;
+    text-align: center;
+    font-family: "Raleway Regular", sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    width: 40%;
+    margin: 0 auto;
+    line-height: 1.5;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+  .subMessageBox {
+    position: fixed;
+    top: 20%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    z-index: 1100;
+  }
+  .questionMark {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-40%, -300%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .undoButton {
+    position: absolute;
+    top: 30%;
+    left: 4.5%;
+    transform: translate(-40%, -300%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .goPrev {
+    position: absolute;
+    top: 100%;
+    left: 1.9%;
+    transform: translate(-40%, -300%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .goNext {
+    position: absolute;
+    top: 100%;
+    left: 95%;
+    transform: translate(-40%, -300%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .textAreaContainer {
+    position: relative;
+    z-index: 1000;
+  }
+   
+  .letterLabel {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-family: "Raleway Regular2", sans-serif;
+    color: #888;
+    pointer-events: none;
+  }
+   
+  .letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 18%;
+    z-index: 1000;
+  }
+   
+  .categorySelect {
+    position: absolute;
+    bottom: 90px;
+    left: 0%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    z-index: 999;
+    height: 10px;
+  }
+  .categorySelect img {
+    margin: 10px;
+  }
+  .categorySelect button {
+    border: none;
+    background: none;
+  }
+ 

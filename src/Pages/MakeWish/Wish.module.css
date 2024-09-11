@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../../assets/LondrinaSolidRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card {
+  background-image: url(../../assets/three_wishes_background.png);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  z-index: 0;
+}
+.aboutImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 0.01%;
+  z-index: 5;
+  background-color: grey;
+}
+
+.stickyTop {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.aboutImg label {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  font-family: "Raleway Regular", sans-serif;
+  font-size: 40px;
+  transform: translate(-50%, -30%);
+  color: white;
+}
+.cloud {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cloud label {
+  font-family: "Raleway Regular", sans-serif;
+  font-size: 25px;
+  color: #3a4ea2;
+}
+
+.cloud img {
+  width: 65%;
+}
+@keyframes wandMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(250px, -50px);
+  }
+  100% {
+    transform: translate(500px, -50px);
+  }
+}
+.wand {
+  position: absolute;
+  cursor: pointer;
+}
+
+.clicked {
+  animation: wandMove 1s linear;
+}
+
+.imageContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  left: 70%;
+  transform: translateY(-25%);
+  top: 50%;
+}
+
+.bodyImage {
+  width: 100%;
+  position: absolute;
+  transform: translateY(5%);
+  z-index: 20;
+}
+
+.headImage {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.legImage {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-left: 10px;
+  transform: translateY(-10%);
+  z-index: 5;
+}
+.wandInHand {
+  width: 20%;
+  height: auto;
+  position: relative;
+  margin-left: 110px;
+  transform: translateY(-318%);
+  z-index: 10;
+}
+.magicianHat {
+  width: 20%;
+  height: auto;
+  position: relative;
+  margin-left: 5px;
+  transform: translateY(-332%);
+  z-index: 10;
+}
+.wishButton {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  margin-left: 40px;
+  transform: translateY(530%);
+  z-index: 500;
+  cursor: pointer;
+}
+.questionMark {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-40%, -300%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.messageBox {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1100;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+.closeIcon {
+  position: absolute;
+  top: 1%;
+  left: 100%;
+  z-index: 1100;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.goNext {
+  position: absolute;
+  top: 100%;
+  left: 95%;
+  transform: translate(-40%, -300%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.goPrev {
+  position: absolute;
+  top: 100%;
+  left: 1.9%;
+  transform: translate(-40%, -300%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.undoButton {
+  position: absolute;
+  top: 30%;
+  left: 4.5%;
+  transform: translate(-40%, -300%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.categorySelect {
+  position: absolute;
+  bottom: 90px;
+  left: 0%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  z-index: 999;
+  height: 10px;
+}
+.categorySelect img {
+  margin: 10px;
+}
+.categorySelect button {
+  border: none;
+  background: none;
+}
+.stickersSelect {
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  left: 68%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  z-index: 999;
+  height: 10px;
+}
+.stickersSelect img {
+  margin: 10px;
+}
+.stickersSelect button {
+  border: none;
+  background: none;
+}
+.stickers {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(171, 164, 192, 0.9);
+  padding: 10px;
+  z-index: 999;
+  height: 100px;
+  border-radius: 30px;
+}
+.stickers img {
+  margin: 10px;
+}
+.droppedStickers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.colors {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: rgba(171, 164, 192, 0.9);
+  padding: 10px;
+  z-index: 999;
+  height: 100px;
+  border-radius: 30px;
+}
+.colors img {
+  margin: 10px;
+  object-fit: cover;
+}
+.colors button {
+  background: none;
+  border: none;
+}
+.textEditor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: rgba(171, 164, 192, 0.9);
+  padding: 10px;
+  z-index: 999;
+  height: 100px;
+  border-radius: 30px;
+}
+
+.textEditor button {
+  border: none;
+  background: none;
+}

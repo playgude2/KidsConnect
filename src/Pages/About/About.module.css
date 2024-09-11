@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../../assets/LondrinaSolidRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.card {
+  background-color: #544482;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  z-index: 0;
+}
+
+.aboutImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 0.01%;
+  z-index: 5;
+  background-color: grey;
+}
+
+.stickyTop {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.aboutImg label {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  font-family: "Raleway Regular", sans-serif;
+  font-size: 40px;
+  transform: translate(-50%, -30%);
+  color: white;
+}
+
+.circles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.imageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 60px;
+}
+.bodyImage {
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: -35px;
+  z-index: 20;
+}
+
+.headImage {
+  width: 50%;
+  height: auto;
+  top: -41px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-51.5%);
+  z-index: 10;
+}
+
+.legImage {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 110px;
+  margin-left: 10px;
+  z-index: 5;
+}
+.stickers {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(171, 164, 192, 0.9);
+  padding: 10px;
+  z-index: 999;
+  height: 100px;
+  border-radius: 30px;
+}
+
+.stickers img {
+  margin: 10px;
+}
+.stickersSelect {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  left: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  z-index: 999;
+  height: 10px;
+}
+.stickersSelect img {
+  margin: 10px;
+}
+
+.stickersSelect button {
+  border: none;
+  background: none;
+}
+.droppedStickers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.categorySelect {
+  position: absolute;
+  bottom: 100px;
+  left: 0%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  z-index: 999;
+  height: 10px;
+}
+.categorySelect img {
+  margin: 10px;
+}
+
+.categorySelect button {
+  border: none;
+  background: none;
+}
+.stickers button {
+  background: none;
+  border: none;
+}
+.colors {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: rgba(171, 164, 192, 0.9);
+  padding: 10px;
+  z-index: 999;
+  height: 100px;
+  border-radius: 30px;
+}
+
+.colors img {
+  margin: 10px;
+  object-fit: cover;
+}
+
+.colors button {
+  border: none;
+  background: none;
+}
+.textEditor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: rgba(171, 164, 192, 0.9);
+  padding: 10px;
+  z-index: 999;
+  height: 100px;
+  border-radius: 30px;
+}
+
+.textEditor button {
+  border: none;
+  background: none;
+}
+
+.questionMark {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-40%, -300%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.messageBox {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1100;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+.closeIcon {
+  position: absolute;
+  top: 1%;
+  left: 100%;
+  z-index: 1100;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.goNext {
+  position: absolute;
+  top: 100%;
+  left: 95%;
+  transform: translate(-40%, -300%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.goPrev {
+  position: absolute;
+  top: 100%;
+  left: 1.9%;
+  transform: translate(-40%, -300%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.worryComponent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(171, 164, 192, 0.9);
+  padding: 10px;
+  z-index: 999;
+  height: 100px;
+  border-radius: 30px;
+}
+
+.worryComponent img {
+  margin: 10px;
+  cursor: pointer;
+}
+.worryComponentExtensions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 700px;
+}
+
+.mainImage {
+  width: 90%;
+}
+
+.worryExtension {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin: 10px;
+  bottom: 600px;
+  z-index: 1000;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 84%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  bottom: 95px;
+  z-index: 1000;
+}
+
+.sliderBar {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.sliderHead {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.undoButton {
+  position: absolute;
+  top: 30%;
+  left: 4.5%;
+  transform: translate(-40%, -300%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

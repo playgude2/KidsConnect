@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Baloo+2:wght@400;700&display=swap");
+.card {
+  background-image: url(../../assets/startBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h1 {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 8rem;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.card h3 {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 8rem;
+  color: #77c9d4;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .card h1 {
+    font-size: 4rem;
+  }
+  .card h3 {
+    font-size: 4rem;
+  }
+  .card button {
+    height: 30px;
+    width: 100px;
+    font-size: 1rem;
+  }
+}
+
+.startButton {
+  height: 60px;
+  width: 200px;
+  border-radius: 30px;
+  background-color: #a3c644;
+  color: white;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+.startButton:hover {
+  background-color: #8ab239;
+}
+
+@media (max-width: 768px) {
+  .card h1 {
+    font-size: 4rem;
+  }
+  .card h3 {
+    font-size: 4rem;
+  }
+  .card button {
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+  }
+}
+.dropdown {
+  width: 300px;
+  text-align: center;
+}
+option {
+  text-align: center;
+  font-family: "Baloo 2", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+select {
+  height: 100px;
+  border-color: black;
+  border: 2px solid black;
+}

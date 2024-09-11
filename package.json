@@ -1,0 +1,78 @@
+{
+  "name": "cafcass",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "dev": "NODE_ENV=development concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "clean": "rimraf ./dist ./build",
+    "build": "npm run clean && tsc -b && vite build && electron-builder",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "canvas-confetti": "^1.9.3",
+    "html2canvas": "^1.4.1",
+    "i18next": "^23.12.2",
+    "jquery": "^3.7.1",
+    "jspdf": "^2.5.1",
+    "pdfmake": "^0.2.12",
+    "popper.js": "^1.16.1",
+    "primereact": "^10.8.0",
+    "quill": "^2.0.2",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.4",
+    "react-confetti": "^6.1.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.0.1",
+    "react-router-dom": "^6.25.1",
+    "react-toastify": "^10.0.5"
+  },
+  "devDependencies": {
+    "@types/pdfmake": "^0.2.9",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "electron": "^31.3.0",
+    "electron-builder": "^24.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "rimraf": "^4.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.example.cafcass",
+    "productName": "Cafcass",
+    "directories": {
+      "output": "build"
+    },
+    "mac": {
+      "icon": "./src/assets/logo.icns",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": {
+        "target": "portable",
+        "arch": [
+          "x64",
+          "ia32"
+        ]
+      },
+      "icon": "./src/assets/logo.ico"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.logoImage {
+  margin-bottom: 20px;
+}
+
+.preloaderContainer {
+  position: relative;
+  width: fit-content;
+}
+
+.preloaderImage {
+  display: block;
+}
+
+.preloaderForegroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: clip-path 0.1s linear;
+  z-index: 1;
+}
+
+.loadingText {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  transition: left 0.1s linear;
+}
+.loadingText2 {
+  font-family: "Comic Sans MS", "Comic Sans", "Arial", sans-serif;
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: #4b0082;
+}

@@ -1,0 +1,188 @@
+/* General card styling */
+.card {
+  background-image: url(../../assets/startBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensures alignment to the left */
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.configureHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center; /* Ensures the text inside is centered */
+}
+
+.configureHead h1 {
+  font-size: 60px; /* Adjust the size as needed */
+  font-weight: bold; /* Optional: Make the text bold */
+  color: white; /* Ensure the color contrasts well with the background */
+}
+
+
+/* Practitioner Data (Email Input) */
+.practitionerData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding-left: 100px; /* Add padding for alignment */
+}
+
+.practitionerData label {
+  font-family: "Impact", "Baloo 2", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+/* Boxes container */
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 300px; /* Adjust this for the gap between the white boxes */
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start; /* Aligns the boxes with the practitioner's email */
+}
+
+/* Adjusting the width of each box */
+.box1Container, .box2Container {
+  flex: 1; /* Allows both boxes to take equal space */
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  height: 400px;
+  overflow-y: auto;
+  max-width: 48%; /* Controls the maximum width */
+}
+
+/* Custom scrollbar */
+.box1Container::-webkit-scrollbar,
+.box2Container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.box1Container::-webkit-scrollbar-track,
+.box2Container::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.box1Container::-webkit-scrollbar-thumb,
+.box2Container::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
+/* Box item styling */
+.boxContainer {
+  border-radius: 20px;
+  padding: 20px 25px;
+  font-family: "Baloo 2", sans-serif; /* Use Arial for clearer text */
+  font-size: 1.8rem;
+  text-align: left;
+  color: white;
+  font-weight: 700; /* Ensure font weight is set for clarity */
+  cursor: move;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Specific color styles for each box */
+.boxBlue {
+  background-color: #4a90e2;
+}
+
+.boxTeal {
+  background-color: #50e3c2;
+}
+
+.boxRed {
+  background-color: #e94e77;
+}
+
+.boxLightBlue {
+  background-color: #bddbfa;
+}
+
+.boxGreen {
+  background-color: #7ed321;
+}
+
+.boxOrange {
+  background-color: #f5a623;
+}
+
+.boxPurple {
+  background-color: #9013fe;
+}
+
+/* Circle styling on the right side of the box */
+.circle {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(90, 225, 90);
+  border-radius: 50%;
+}
+
+.saveButton {
+  position: absolute; /* Change from fixed to absolute */
+  bottom: 40px; /* Adjust based on the box container position */
+  right: 150px; /* Center align horizontally */
+  transform: translateX(50%); /* Center align horizontally */
+  background-color: #e94e77;
+  color: white;
+  border-radius: 25px; /* Reduce the border radius to match box style */
+  padding: 10px 20px; /* Adjust padding to match the boxes */
+  font-size: 2rem; /* Adjust font size to match boxes */
+  font-family: "Baloo 2", sans-serif; /* Ensure consistency with the rest of the app */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border: none; /* Remove any border */
+  margin: 0; /* Remove any margin */
+  z-index: 100; /* Ensure it stays on top */
+}
+
+.saveButton:hover {
+  background-color: #d83b66;
+}
+
+
+/* Back arrow styling */
+.backArrow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}

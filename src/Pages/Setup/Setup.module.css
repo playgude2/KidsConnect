@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../../assets/LondrinaSolidRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card {
+  background-image: url(../../assets/startBG.png);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  z-index: 0;
+}
+
+.configureHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Raleway Regular", sans-serif;
+  color: white;
+  font-size: 4rem
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-family: "Raleway Regular", sans-serif;
+  color: white;
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+.inputField {
+  width: 70%;
+  padding: 10px 10px 10px 40px;
+  border-radius: 110px;
+  background-position: 10px start;
+  border: none;
+}
+
+/* Boxes container with larger size and margins */
+.boxesContainer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: calc(100% - 120px); /* Full width minus 60px margins on each side */
+  margin: auto;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Gap between boxes */
+}
+
+/* Box styling */
+.box {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Raleway Regular", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;  /* Adjust as per your design */
+  font-weight: 700; /* Make the text bold for sharper appearance */
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* This affects the box, not the text */
+  transition: transform 0.2s ease;
+  position: relative;
+  text-shadow: none;  /* Remove any shadow to get rid of glow */
+  margin-bottom: 50px;
+}
+
+/* Override for any child elements inside the box */
+.box * {
+  text-shadow: none !important; /* Ensure no text shadow is applied */
+  font-weight: 700 !important; /* Force font weight for sharpness */
+  color: inherit !important; /* Ensure the color is inherited properly */
+}
+
+
+
+
+/* Dynamic box colors */
+.boxBlue {
+  background-color: #4a90e2;
+}
+
+.boxTeal {
+  background-color: #50e3c2;
+}
+
+.boxRed {
+  background-color: #e94e77;
+}
+
+.boxLightBlue {
+  background-color: #bddbfa;
+}
+
+.boxGreen {
+  background-color: #7ed321;
+}
+
+.boxOrange {
+  background-color: #f5a623;
+}
+
+.boxPurple {
+  background-color: #9013fe;
+}
+
+/* Circle styling on the right side of the box */
+.circle {
+  width: 35px;
+  height: 35px;
+  background-color: white; /* Circle background color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px; /* Align the circle to the right */
+}
+
+/* Check mark styling inside the circle */
+.checkMark {
+  width: 45px;
+  height: 45px;
+}
+
+/* Fixed boxes */
+.fixedBox1 {
+  background-color: #7b68ee; /* Purple */
+}
+
+.fixedBox2 {
+  background-color: #ff00ff; /* Magenta */
+}
+
+.fixedBox3 {
+  background-color: #ff723b; /* Yellow */
+}
+
+.saveButton {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  background-color: #9013fe; /* Same as the small purple shadow */
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1.5rem; /* Adjust font size */
+  font-family: "Raleway Regular", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin: 0;
+  z-index: 100;
+}
+
+.saveButton:hover {
+  background-color: #7b68ee; /* Slightly darker on hover */
+}
+
+.backArrow {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  transform: translate(10%, -20%);
+  cursor: pointer;
+}
+
+.invisibleLabel {
+  visibility: hidden;
+  
+}

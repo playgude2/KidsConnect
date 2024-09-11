@@ -1,0 +1,202 @@
+.card {
+  background-color: #544482;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.labelInputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  z-index: 40;
+}
+
+.labelInputContainer label {
+  color: white;
+  font-size: 22px;
+  color: #94e9de;
+  text-transform: uppercase;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+}
+
+input::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+}
+.aboutImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 0.01%;
+}
+
+.stickyTop {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.labelInputContainer input {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 80px;
+  border: none;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transform: translate(0, 5%);
+}
+
+.bodyImage {
+  width: 50%;
+  height: auto;
+  position: relative;
+  top: -139px;
+  z-index: 20;
+}
+
+.headImage {
+  width: 30%;
+  height: auto;
+  top: -70px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-52%);
+  z-index: 4;
+}
+
+.legImage {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: -61px;
+  margin-left: 15px;
+  z-index: 5;
+}
+.imgFluid {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: calc(100% - 324px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.randomizeButton {
+  position: absolute;
+  bottom: 35%;
+  padding: 15px 30px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  background-color: #af4ca2;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.startButtonContainer {
+  position: absolute;
+  bottom: 110px;
+  left: 98%;
+  transform: translateX(-100%);
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  z-index: 200;
+}
+
+.startButton {
+  height: 70px;
+  width: 200px;
+  border-radius: 30px;
+  background-color: #a3c644;
+  color: white;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  z-index: 250;
+  transition: background-color 0.3s;
+}
+.startButton:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+.startButton:hover {
+  background-color: #8ab239;
+}
+.startButton:disabled:hover {
+  background-color: #cccccc;
+  color: #666666;
+}
+.arrowContainer,
+.arrowContainerBody,
+.arrowContainerLegs {
+  display: flex;
+  position: absolute;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  z-index: 20;
+}
+
+.arrowContainer {
+  top: calc(50% - 10px);
+}
+
+.arrowContainerBody {
+  top: calc(50% + 80px);
+}
+
+.arrowContainerLegs {
+  top: calc(50% + 170px);
+}
+
+.arrowLeft,
+.arrowRight {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .bodyImage,
+  .headImage,
+  .legImage,
+  .imgFluid {
+    width: 70%;
+  }
+}
+.backArrow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
